@@ -6,7 +6,8 @@ import (
 	"net/http"
 
 	// "github.com/bgildson/gomock-example/client/finalspace0"
-	finalspace "github.com/bgildson/gomock-example/client/finalspace1"
+	// finalspace "github.com/bgildson/gomock-example/client/finalspace1"
+	finalspace "github.com/bgildson/gomock-example/client/finalspace2"
 )
 
 func main() {
