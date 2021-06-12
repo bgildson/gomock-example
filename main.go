@@ -7,7 +7,8 @@ import (
 
 	// "github.com/bgildson/gomock-example/client/finalspace0"
 	// finalspace "github.com/bgildson/gomock-example/client/finalspace1"
-	finalspace "github.com/bgildson/gomock-example/client/finalspace2"
+	// finalspace "github.com/bgildson/gomock-example/client/finalspace2"
+	finalspace "github.com/bgildson/gomock-example/client/finalspace3"
 )
 
 func main() {
