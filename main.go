@@ -3,12 +3,15 @@ package main
 import (
 	"fmt"
 	"log"
+	"net/http"
 
-	"github.com/bgildson/gomock-example/client/finalspace0"
+	// "github.com/bgildson/gomock-example/client/finalspace0"
+	finalspace "github.com/bgildson/gomock-example/client/finalspace1"
 )
 
 func main() {
-	fsClient := finalspace0.New()
+	// fsClient := finalspace0.New()
+	fsClient := finalspace.New(http.DefaultClient, "https://finalspaceapi.com")
 
 	quotes, err := fsClient.GetQuotes()
 	if err != nil {
