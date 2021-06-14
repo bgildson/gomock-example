@@ -8,12 +8,15 @@ import (
 	"github.com/bgildson/gomock-example/entity"
 )
 
+// Client implements a finalspace client
 type Client struct{}
 
+// New creates a new Client instance
 func New() *Client {
 	return &Client{}
 }
 
+// GetQuotes reachs the finalspace api to return a quotes list
 func (c Client) GetQuotes() ([]entity.Quote, error) {
 	res, err := http.DefaultClient.Get("https://finalspaceapi.com/api/v0/quote")
 	if err != nil {
